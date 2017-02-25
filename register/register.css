@@ -1,0 +1,127 @@
+/*定义字体*/
+/*header 字体*/
+@font-face{
+    font-family: header;
+    src: url("../font/goya.ttf");
+}
+body{
+    margin: 1px;
+    background-size: 100% 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: plum;
+    height: 150px;
+    margin: 0;
+}
+header>div{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+header>div>div{
+    position: absolute;
+    top: 0;bottom: 0;
+    height: 130px;
+    width: 600px;
+    display: block;
+    margin: auto;
+    font-family: header;
+    font-size: 88px;
+    padding-left: 35px;
+}
+
+/*footer样式*/
+footer{
+    font-size: 8pt;
+    color: gray;
+    margin-top: 200px;
+}
+
+footer>hr{
+    color:cadetblue;
+}
+
+footer>a{
+    padding-left: 718px;
+}
+
+/*主页面的样式单*/
+.content-tit{
+    position: relative;
+    width: 100%;
+    background-color: rosybrown;
+    overflow: hidden;
+    margin-top: 1px;
+    height: 40px;
+}
+
+.content-tit>h1{
+    margin: 0;
+    top: 0; bottom: 0;
+    font-size: 20pt;
+    padding-left: 40px;
+}
+
+.mainForm{
+    margin-top: 20px;
+    padding-left: 333px;
+    overflow: hidden;
+}
+/*欢迎字*/
+.wellcome-word{
+    padding-left: 330px;
+    font-size: 12pt;
+}
+/*红色星号*/
+.txt-impt{
+    color: #E0061C;
+    text-align: left;
+    overflow: hidden;
+}
+/*表单样式*/
+dl{clear: left;}
+dt{
+    display: inline-block;
+    width: 100px;
+    float: left;
+    height: 60px;
+    font-size: 13pt;
+    overflow: hidden;
+}
+/*输入框样式*/
+.Ipt{
+    display: inline-block;
+    margin-left: 40px;
+    width: 240px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 2px 2px 2px 2px;
+}
+/*输入框下面的提示样式*/
+.input-tips{
+    display: block;
+    color: gray;
+    font-size: 6pt;
+    padding-left: 40px;
+    overflow: hidden;
+}
+.sex-list{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.personal-profile{
+    padding-left: 40px;
+    font-size: 10pt;
+    overflow: hidden;
+}
+
+.register-botton{
+    margin-left: 333px;
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+}

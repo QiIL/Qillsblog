@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+    @import url("register.css");
+    </style>
+</head>
+<body>
+    <!--页面头部信息-->
+    <header class="header">
+        <div class="blog">
+            <div>KILL's Blog</div>
+        </div>
+    </header>
+    <!--页面中部信息(包含表单，提示等)-->
+    <section class="content" id="mainSection">
+        <!--表单头部简略介绍文字-->
+        <header class="content-tit">
+            <h1>KILL's Blog就是一个主人为KILL的blog</h1>
+        </header>
+
+        <div id="mainForm" class="mainForm">
+            <!--注册帐号的欢迎文字-->
+            <div id="wellcome-word" class="wellcome-word">
+                欢迎注册KILL's blog账户
+            </div>
+
+            <div id="normal-reg" class="normal-reg">
+                <!--创建帐号-->
+                <dl id="account-container" class="container">
+                    <dt class="regForm-item-ct">
+                        <span class="txt-impt">*</span>
+                        用户名
+                    </dt>
+                    <dd class="regForm-integrated">
+                        <input id="nameIpt" name="name" class="Ipt" type="text"
+                        placeholder="请输入你的用户名">
+                        <div id="input-tips" class="input-tips">
+                            6-18个字符，可使用字母，数字，下划线
+                        </div>
+                    </dd>
+                </dl>
+                
+                <!--设置密码-->
+                <dl id="password-container" class="container">
+                    <dt class="regForm-item-ct">
+                        <span class="txt-impt">*</span>
+                        设置密码                        
+                    </dt>
+                    <dd class="regForm-integrated">
+                        <input id="passwordIpt" class="Ipt" type="password"
+                        placeholder="请输入密码">
+                        <div id="input-tips" class="input-tips">
+                            6-16个字符，区分大小写
+                        </div>
+                    </dd>
+                </dl>
+                
+                <!--确认密码-->
+                <dl id="spassword-container" class="container">
+                    <dt class="regForm-item-ct">
+                        <span class="txt-impt">*</span>
+                        确认密码
+                    </dt>
+                    <dd class="regForm-integrated">
+                        <input id="spasswordIpt" class="Ipt" type="password"
+                        placeholder="需要与密码一样">
+                        <div id="input-tips" class="input-tips">
+                            请再次填写密码
+                        </div>
+                    </dd>
+                </dl>
+
+                <!--性别-->
+                <dl id="gender-container" class="container">
+                    <dt class="regForm-item-ct">
+                        <span class="txt-impt">*</span>
+                        性别
+                    </dt>
+                    <dd class="sex-list">
+                        <form action="" method="GET">
+                            <label><input name="sex" id="gender" class="gender" type="radio" value="male"> 男</label>
+                            <label><input name="sex" id="gender" class="gender" type="radio" value="female"> 女</label>
+                        </form>
+                    </dd>
+                </dl>
+
+                <!--个人简介-->
+                <dl id="personal-profile-container" class="personal-profile-container">
+                    <dt class="regForm-item-ct">
+                        <span class="txt-impt">*</span>
+                        个人简介
+                    </dt>
+                    <dd class="personal-profile">
+                        <textarea rows="8" cols="68"></textarea>
+                    </dd>
+                </dl>
+                <!--注册按钮-->
+                <input id="register-botton" class="register-botton" type="button" value="注册">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr>
+        <a href="#">--关于我--</a>
+    </footer>
+</body>
+</html>
