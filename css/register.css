@@ -1,63 +1,41 @@
-/*定义字体*/
-/*header 字体*/
-@font-face{
-    font-family: header;
-    src: url("../font/goya.ttf");
-}
 body{
     margin: 1px;
     background-size: 100% 100%;
+    background-image: url("../image/bamboo1.jpg");
 }
-
-a{
-    text-decoration: none;
-}
-.header{
-    background-color: plum;
-    height: 150px;
-    margin: 0;
-}
-header>div{
-    position: relative;
-    height: 150px;
-    overflow: hidden;
-}
-header>div>div{
-    position: absolute;
-    top: 0;bottom: 0;
-    height: 130px;
-    width: 600px;
-    display: block;
-    margin: auto;
-    font-family: header;
-    font-size: 88px;
-    padding-left: 35px;
-}
-
 /*footer样式*/
 footer{
     font-size: 8pt;
     color: gray;
-    margin-top: 200px;
+    margin-top: 240px;
 }
 
 footer>hr{
+    margin: 0 50px 0 50px;
     color:cadetblue;
 }
 
 footer>a{
-    padding-left: 718px;
+    margin: 0 50% 0 50%;
 }
 
 /*主页面的样式单*/
+.mainSectiong{
+    margin: 1px;
+}
+.mainForm{
+    margin: 0 auto;
+    max-width: 700px;
+}
+/*欢迎字*/
 .content-tit{
-    position: relative;
     width: 100%;
     background-color: rosybrown;
     overflow: hidden;
     margin-top: 1px;
     height: 40px;
 }
+
 
 .content-tit>h1{
     margin: 0;
@@ -66,16 +44,14 @@ footer>a{
     padding-left: 40px;
 }
 
-.mainForm{
-    margin-top: 20px;
-    padding-left: 333px;
-    overflow: hidden;
-}
-/*欢迎字*/
+
 .wellcome-word{
-    padding-left: 330px;
+    margin: 0 auto;
     font-size: 12pt;
+    width: 700px;
+    text-align: center;
 }
+
 /*红色星号*/
 .txt-impt{
     color: #E0061C;
@@ -83,22 +59,21 @@ footer>a{
     overflow: hidden;
 }
 /*表单样式*/
-dl{clear: left;}
+dl{}
 dt{
+    position: absolute;
     display: inline-block;
     width: 100px;
-    float: left;
-    height: 60px;
+    height: 48px;
     font-size: 13pt;
     overflow: hidden;
 }
 /*输入框样式*/
 .Ipt{
     display: inline-block;
-    margin-left: 40px;
+    margin: 0 0 0 100px;
     width: 240px;
     height: 20px;
-    overflow: hidden;
     border-radius: 2px 2px 2px 2px;
 }
 /*输入框下面的提示样式*/
@@ -106,17 +81,19 @@ dt{
     display: block;
     color: gray;
     font-size: 6pt;
-    padding-left: 40px;
+    width: 240px;
+    margin: 0 0 0 100px;
     overflow: hidden;
 }
 .sex-list{
-    padding-left: 40px;
+    width: 100px;
+    margin: 0 0 0 135px;
     overflow: hidden;
 }
-.personal-profile{
-    padding-left: 40px;
+textarea{
+    width: 493px;
+    margin: 0 0 0 100px;
     font-size: 10pt;
-    overflow: hidden;
 }
 
 .register-botton{
