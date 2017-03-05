@@ -1,0 +1,316 @@
+@font-face{
+    font-family: Cheri-Liney;
+    src: url("../font/Cheri Liney.ttf");
+}
+@font-face{
+    font-family: xoireqe;
+    src: url("../font/xoireqe.ttf");
+}
+
+body{
+    background-color: rgba(47, 33, 24, 0.51);
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    font-family: Cheri-Liney;
+    font-size: 36pt;
+    text-align: center;
+}
+
+nav{
+    position: relative;
+    width: 70vmin;
+    height: 70vmin;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/**MENU BUTTON ***********************************/
+#menuButton{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 10%;
+    height: 10%;
+    z-index: 2;
+    will-change: transform;
+}
+
+#menuButton svg{
+    display: block;
+}
+
+#menuButton svg circle:hover{
+    -webkit-animation: cirHover 0.7s;
+            animation: cirHover 0.7s;
+    cursor: pointer;
+}
+
+#cross{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+#menuButton span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;    
+    background-clip: content-box;
+    background-color: #585247;
+    -webkit-transform: translate(-45%, -45%);
+            transform: translate(-45%, -45%);
+     -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;       
+    pointer-events: none;
+}
+
+#menuButton #column{
+    -webkit-transform: translateX(-45%) rotate(90deg);
+            transform: translateX(-45%) rotate(90deg);
+}
+
+@-webkit-keyframes cirHover{
+    0%{
+        stroke-dasharray: 0, 0, 300;
+    }
+    10%{
+        stroke-dasharray: 0, 20, 300;
+    }
+    100%{
+        stroke-dasharray: 300, 20, 300;
+    }
+}
+
+@keyframes cirHover{
+    0%{
+        stroke-dasharray: 0, 0, 300;
+    }
+    10%{
+        stroke-dasharray: 0, 20, 300;
+    }
+    100%{
+        stroke-dasharray: 300, 20, 300;
+    }
+}
+
+.active #menuButton:hover svg circle{
+    -webkit-animation: none;
+            animation: none;
+}
+
+.active #menuButton #row{
+    -webkit-transform: translateX(-45%) rotate(225deg);
+            transform: translateX(-45%) rotate(225deg);
+}
+
+.active #menuButton #column{
+    -webkit-transform: translateX(-45%) rotate(315deg);
+            transform: translateX(-45%) rotate(315deg);
+}
+
+/**MENU LIST*********************************/
+#semiCircle{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.1;
+    -webkit-transform: scale(0.1) translatez(0);
+            transform: scale(0.1) translatez(0);
+    transition: opacity 0.2s, transform 0.3s 0.05s;
+    transition: opacity 0.2s, transform 0.3s 0.05s, -webkit-transform 0.3s 0.05s;
+}
+
+.tr{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    overflow: hidden; 
+    opacity: 0;
+}
+
+@media screen and (max-width:925px){
+    .top{
+        width: 200px;
+        height: 100px;
+        border-radius: 100px 100px 0 0;
+    }
+    .bottom{
+        width: 200px;
+        height: 100px;
+        border-radius: 0 0 100px 100px;
+    }
+}
+
+@media screen and (min-width:925px){
+    .top{
+        width: 257.594px;
+        height: 128.797px;
+        border-radius: 128.797px 128.797px 0 0;
+    }
+    .bottom{
+        width: 257.594px;
+        height: 128.797px;
+        border-radius: 0 0 128.797px 128.797px;
+    }
+}
+
+.tr:nth-child(1){
+    transform: translate(-36%, -70%);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.2s;
+    transition: opacity 0.3s, -webkit-transform 0.2s;
+    transition: opacity 0.3s, transform 0.2s;
+    transition: opacity 0.3s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.active .tr:nth-child(1){
+    transition: opacity 0.3s 0.05s, transform 0.5s 0.05s cubic-bezier(0, 2.3, 0.8, 1);
+    transform: translate(-36%, -80%);
+}
+
+.tr:nth-child(2){
+    transform: translate(-36%, 20%);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.2s;
+    transition: opacity 0.3s, -webkit-transform 0.2s;
+    transition: opacity 0.3s, transform 0.2s;
+    transition: opacity 0.3s, transform 0.2s, -webkit-transform 0.2s;
+}
+
+.active .tr.tr:nth-child(2){
+    transition: opacity 0.3s 0.05s, transform 0.5s 0.05s cubic-bezier(0, 2.3, 0.8, 1);
+    transform: translate(-36%, 30%);
+}
+
+.clip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-size: 2vmin;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+    background: #000;
+    z-index: 2
+}
+
+.content img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.content h2{
+    position: absolute;
+    width: 60%;
+    line-height: 1em;
+    color: #fff;
+    opacity: 0;
+}
+
+.top h2{
+    bottom: 20%;
+    left: 37%;
+}
+
+.bottom h2{
+    top: 15%;
+    left: 28%;
+}
+
+.content h2{
+    transition: transform 0.3s cubic-bezier(0, 2.3, 0.8, 1);, opacity 0.3s;
+}
+
+.content p{
+    transition: tramsform 0.3s 0.075s cubic-bezier(0, 2.3, 0.8, 1);, opacity 0.3s 0.075s;
+}
+
+.content:hover h2, .content:hover p{
+    opacity: 1;
+}
+
+.content:hover img{
+    opacity: 0.4;
+}
+
+.active #semiCircle{
+    -webkit-transform: scale(0.9) translateZ(0);
+    transform: scale(0.9) translateZ(0);
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+    will-change: transform;
+}
+
+.active .tr{
+    opacity: 1;
+    will-change: transform;
+}
+
+/**footer ****************************************/
+footer{
+    text-align: center;
+}
+
+footer a{
+    font-family: Cheri-Liney;
+    text-decoration: none;
+    color: #401818;
+}
+
+.ripple{
+    overflow: hidden;
+}
+
+.ripple:after{
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 240%;
+    padding-left: 240%;
+    margin-top: -120%;
+    margin-left: -50%;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.ripple:active:after{
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-top: 0;
+    opacity: 1;
+    transition: 0s;
+    z-index: 5;
+}

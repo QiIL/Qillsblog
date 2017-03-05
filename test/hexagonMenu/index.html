@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>超炫CSS3六边形菜单动画特效|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link rel="stylesheet" href="style.css">
+	<!--[if IE]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<nav id="hexNav">
+		  <div id="menuBtn">
+		    <svg viewbox="0 0 100 100">
+					<circle cx="50" cy="50" r="45" stroke="#585247" stroke-width="4" fill="transparent" stroke-dasharray="300,0"></circle>
+		    </svg>
+		    <span></span>
+		  </div>
+		  <ul id="hex">
+		    <li class="tr"><div class="clip"><a href="#" class="content">
+		      <img src="img/1.jpg" alt="" />
+		      <h2 class="title">Title</h2><p>Catch phrase</p>
+		    </a></div></li>
+		    <li class="tr"><div class="clip"><a href="#" class="content">
+		      <img src="img/2.jpg" alt="" />
+		      <h2 class="title">Title</h2><p>Catch phrase</p>
+		    </a></div></li>
+		  </ul>
+		</nav>
+
+
+	<script type="text/javascript">
+		var hexNav = document.getElementById('hexNav');
+
+		document.getElementById('menuBtn').onclick = function() {
+		    var className = ' ' + hexNav.className + ' ';
+				console.log(~className.indexOf(' active '));
+				console.log(className);
+		    if ( ~className.indexOf(' active ') ) {
+		        hexNav.className = className.replace(' active ', ' ');
+		    } else {
+		        hexNav.className += ' active';
+		    }              
+		}	
+	</script>
+</body>
+</html>

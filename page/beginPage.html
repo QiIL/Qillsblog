@@ -6,9 +6,45 @@
     <style>
         @import url("../css/identity.css");
     </style>
-    
 </head>
 <body>
-    
+    <header>
+        Please choose your identity Menager or Visiter?
+    </header>
+    <div id="container">
+        <nav id="cirNav">
+            <div id="menuButton">
+                <svg viewbox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="#5a5a5a" stroke-width="4" fill="#e8e5b7" stroke-dasharray="0, 0, 300"></circle>
+                </svg>
+                <span id="row"></span>
+                <span id="column"></span>
+            </div>
+            <ul id="semiCircle">
+                <li class="tr top ripple"><div class="clip"><a href="#" class="content">
+                    <img src="../image/overwatch.jpg">
+                    <h2>QILL</h2>
+                </a></div></li>
+                <li class="tr bottom ripple"><div class="clip"><a href="#" class="content">
+                    <img src="../image/overwatch1.jpeg">
+                    <h2>I JUST A VISITER</h2>
+                </a></div></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <a href="#">What's different with Menager and Visiter?</a>
+    </footer>
+    <script>
+        var cirNav = document.getElementById("cirNav");
+        document.getElementById("menuButton").onclick = function(){
+            var className = " " + cirNav.className + " ";
+            if ( ~className.indexOf(" active ")){
+                cirNav.className = className.replace(" active ", " ");
+            }else{
+                cirNav.className += " active";
+            }
+        }
+    </script>
 </body>
 </html>
