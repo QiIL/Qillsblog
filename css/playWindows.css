@@ -1,0 +1,103 @@
+.bg{
+    position: absolute;
+    display: none;
+    width: 99.9%;
+    height: 99.9%;
+    background-color: rgba(99, 99, 99, 0.7);
+}
+
+.listBg1{
+    position: absolute;
+    display: none;
+    left: 0; right: 0;
+    margin: 150px auto;
+    width: 360px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 3px #888888;
+    border: 2px solid #efeab1;
+    z-index: 2;
+}
+
+.listBg1 input, .listBg2 #quit{
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    z-index: 2;
+}
+
+.listBg1 input:hover, .listBg2 #quit:hover{
+    background-color: #d62525;
+    background: linear-gradient(to bottom, #d62525, #fff);
+    cursor: pointer;
+}
+
+.listBg1 button{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    z-index: 3;
+}
+
+.listBg1 button:nth-child(1){
+    margin: 40px 0 0 100px;
+}
+
+.listBg1 button:nth-child(2){
+    margin: 120px 0 0 10px;
+}
+
+.listBg1 button:nth-child(3){
+    margin: 120px 0 0 190px;
+}
+
+.listBg1 button:nth-child(4){
+    margin: 220px 0 0 100px;
+}
+
+.listBg2{
+    position: absolute;
+    display: none;
+    left: 0; right: 0;
+    margin: 180px auto;
+    width: 320px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 3px #888888;
+    border: 2px solid #efeab1;
+    z-index: 2;
+}
+
+.listBg2 div{
+    position: absolute;
+    left: 0; right: 0;
+    margin: 30px auto;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Microsoft YaHei";
+    font-size: 16pt;
+}
+
+.listBg2 #title{
+    position: absolute;
+    left: 0; right: 0;
+    margin: 90px auto;
+    width: 250px;
+    height: 25px;   
+}
+
+.listBg2 button{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    z-index: 3;
+}
+
+.listBg2 button:nth-child(3){
+    margin: 165px 0 0 25px;
+}
+
+.listBg2 button:nth-child(4 ){
+    margin: 165px 0 0 175px;
+}

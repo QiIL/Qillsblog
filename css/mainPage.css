@@ -42,10 +42,18 @@ footer>a{
     margin: 1px auto;
 }
 
-.myArticle{
+.mainContent .articleList{
     display: inline-block;
     width: 580px;
-    height: 69px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 2px lightgray;
+    background-image: url("../image/mainPageBackground2.jpg");
+}
+
+.myArticle{
+    width: 580px;
+    height: 100px;
     text-overflow: ellipsis;
     overflow: hidden;
     border: 1px solid lightgray;

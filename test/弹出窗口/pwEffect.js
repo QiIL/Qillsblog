@@ -1,0 +1,18 @@
+$(function(){
+		$('.click').click(function(){
+			$('.bg').css({'display':'block'});
+			$('.content').css({'display':'block'});
+		});
+		$('.bg').click(function(){
+			$('.bg').css({'display':'none'});
+			$('.content').css({'display':'none'});
+		});
+		$('.click1').click(function(){
+			$('.bg').fadeIn(200);
+			$('.content').fadeIn(400);
+		});
+		$('.bg').click(function(){
+			$('.bg').fadeOut(200);
+			$('.content').fadeOut(200);
+		});
+});

@@ -130,7 +130,7 @@ nav {
           transform-origin: 0 100%;
   overflow: hidden;
   -webkit-transform: skewY(-30deg);
-          transform: skewY(-30deg);
+          transform: skewY(-30deg); /*翻转，所以得到了菱形*/
   opacity: 0;
 }
 
