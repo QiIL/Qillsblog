@@ -1,0 +1,53 @@
+body{
+    margin: 1px;
+}
+
+hr{
+    width: 700px;
+}
+
+header{
+    padding: 50px 0 0 210px;
+    font-size: 18pt; 
+}
+
+#articleArea{
+    margin: 0 auto;
+    width: 900px;
+}
+
+#aboutTitle #titDescription{
+    padding: 10px 0 0 100px;
+    font-size: 14pt;
+}
+
+#aboutTitle select{
+    display: inline-block;
+    height: 25px;
+    border-radius: 4px;
+    margin: 0 10px 0 110px;    
+}
+
+#aboutTitle input{
+    width: 560px;
+    height: 25px;
+    border-radius: 4px;
+    font-size: 12pt;
+}
+
+#texDescription{
+    padding: 10px 0 0 100px;
+    font-size: 14pt;
+}
+
+textarea{
+    margin: 0 10px 0 110px;
+    font-size: 10pt;
+    border-radius: 4px;
+}
+
+#submitButton{
+    margin: 10px 400px;
+    width: 100px;
+    height: 40px;   
+}
